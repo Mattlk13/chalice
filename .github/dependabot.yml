@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/."
+  schedule:
+    interval: daily
+    time: "11:00"
+    timezone: America/Mexico_City
+  open-pull-requests-limit: 1000
+  allow:
+  - dependency-name: pip
+  ignore:
+  - dependency-name: pip
+    versions:
+    - "21.0"
